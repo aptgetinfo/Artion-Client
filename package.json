@@ -25,7 +25,6 @@
     "@web3-react/walletlink-connector": "^6.2.3",
     "axios": "^0.21.1",
     "axios-react": "^2.0.2",
-    "babel-jest": "^24.8.0",
     "babel-loader": "8.0.6",
     "babel-plugin-named-asset-import": "^0.3.3",
     "babel-preset-react-app": "^9.0.1",
@@ -48,7 +47,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
-    "ethers": "^5.0.32",
+    "ethers": "^5.5.3",
     "faker": "^5.4.0",
     "file-loader": "3.0.1",
     "file-saver": "^2.0.5",
@@ -65,6 +64,7 @@
     "jest-environment-jsdom-fourteen": "0.1.0",
     "jest-resolve": "24.8.0",
     "jest-watch-typeahead": "0.3.1",
+    "jshint": "^2.13.3",
     "material-ui": "^0.20.2",
     "material-ui-colors": "^1.0.0",
     "material-ui-image": "^3.3.1",
@@ -126,8 +126,8 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -162,7 +162,6 @@
     ],
     "testEnvironment": "jest-environment-jsdom-fourteen",
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
